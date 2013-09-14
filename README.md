@@ -1,37 +1,31 @@
-Offering 0.8.3 BETA
-====================
+Offerings to Cthulhu 1.0
 
-Copyright (c) 2009-2013 Bitcoin Developers
+The time draws near, the return of The Great Old One is upon us. Join us in our ritual.
 
-Distributed under the MIT/X11 software license, see the accompanying
-file COPYING or http://www.opensource.org/licenses/mit-license.php.
-This product includes software developed by the OpenSSL Project for use in the [OpenSSL Toolkit](http://www.openssl.org/). This product includes
-cryptographic software written by Eric Young ([eay@cryptsoft.com](mailto:eay@cryptsoft.com)), UPnP software written by Thomas Bernard and
-sphlib 3.0 by Thomas Pornin.
+As the equinox approaches we begin the ritual; four weeks and five days long it builds until Cthulhu awakens and one worshipper is rewarded greatly! 
 
+During the first and second weeks of the ritual, sacrificial amounts are placed in special, once a day blocks. These blocks are a reward to the worshipper for sacrifice made. During the third and fourth weeks of the ritual the rewards build, small at first, then larger as the worship increases with fervor. During the last five days, the 'Tharanak shagg,' or "promise of dreamland," the ritual reaches final pitch and the daily special blocks are highly increased. Finally Cthulhu will return after the 50665th offering has paid tribute to the Great Old One and he will bestow a bounty deserving of Him upon one lucky worshiper. The ritual can be repeated after six months time, following the great halving.
 
-Intro
----------------------
-Offering is a free open source peer-to-peer electronic cash system that is
-completely decentralized, without the need for a central server or trusted
-parties.  Users hold the crypto keys to their own money and transact directly
-with each other, with the help of a P2P network to check for double-spending.
+Technical Details:
 
+*Fork/Clone of Quarkcoin, may or may not work with Quark standalone miner.
 
-Setup
----------------------
-You need the Qt4 run-time libraries to run Bitcoin-Qt. On Debian or Ubuntu:
-	`sudo apt-get install libqtgui4`
+*RPC Ports = 1928 (testnet 11928)
 
+*P2P Ports = 20000 (testnet 20001)
 
-Other Pages
----------------------
-- [Unix Build Notes](build-unix.md)
-- [OSX Build Notes](build-osx.md)
-- [Windows Build Notes](build-msw.md)
-- [Coding Guidelines](coding.md)
-- [Release Process](release-process.md)
-- [Release Notes](release-notes.md)
-- [Multiwallet Qt Development](multiwallet-qt.md)
-- [Unit Tests](unit-tests.md)
-- [Translation Process](translation_process.md)
+*In Wallet Mining = Console, "setgenerate true"
+
+*addnode=69.85.86.195
+
+*60 Second Block Target, Diff Retarget every 20 Blocks, .0675 Starting Difficulty
+
+*30 Confirms for spendable-coins
+
+*5 Coins Per Block, halving after 6 months, ~5 years worth of mining, min block reward .001
+
+*4-week+5day Ritual Special Blocks, Once per day special rewards, special blocks will become checkpoints
+
+*10K Coins Pre-mined in block 1, will be overtaken by rewards within 48 hours.
+
+See main.cpp for block reward special details.
